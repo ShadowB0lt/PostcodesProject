@@ -1,6 +1,7 @@
 package com.sparta.eng_28;
 
 import java.io.FileReader;
+import java.io.IOException;
 
 public class PostcodeFileReader {
 
@@ -20,11 +21,16 @@ public class PostcodeFileReader {
     }
 
 
-    {
-        return postCodeFile;
-    public FileReader getPostcodeFile()
-    {
+    public FileReader getPostcodeFile() {
         return postcodeFile;
     }
 
+
+    public void closePostcodeFile(){
+        try {
+            postcodeFile.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

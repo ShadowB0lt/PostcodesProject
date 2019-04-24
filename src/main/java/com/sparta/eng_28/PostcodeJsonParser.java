@@ -14,7 +14,8 @@ public class PostcodeJsonParser {
         try {
             PostcodeFileReader reader = new PostcodeFileReader(filepath);
             JSONParser parser = new JSONParser();
-            postcodeJson = (JSONObject) parser.parse(reader.getPostCodeFile());
+            postcodeJson = (JSONObject) parser.parse(reader.getPostcodeFile());
+            reader.closePostcodeFile();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ParseException e) {

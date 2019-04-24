@@ -2,10 +2,13 @@ package com.sparta.eng_28;
 
 import static org.junit.Assert.assertTrue;
 
+import org.json.simple.JSONObject;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.FileReader;
 
 
 /**
@@ -23,8 +26,16 @@ public class PostcodeFileReaderTest
 
     @Test
     public void testReader(){
+        Assert.assertTrue(reader.getPostcodeFile() instanceof FileReader);
+    }
+
+    @Test
+    public void testReaderNull(){
         Assert.assertTrue(reader != null);
     }
+
+
+
 
     @AfterClass
     public static void destroyFileReader(){
