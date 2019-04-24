@@ -60,7 +60,7 @@ public class SinglePostcodeDTOTest {
     @Test
     public void getLatitudeTest()
     {
-        Assert.assertEquals(singlePostcodeDTO.getLatitude(),50.843500,0.000000);
+        Assert.assertEquals(singlePostcodeDTO.getLatitude(),50.843508,0.000000);
     }
     @Test
     public void getEuropeanElectoralRegionTest()
