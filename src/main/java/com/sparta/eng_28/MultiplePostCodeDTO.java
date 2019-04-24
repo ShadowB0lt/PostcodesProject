@@ -27,7 +27,7 @@ public class MultiplePostCodeDTO {
         postCodeMap = new HashMap<>();
         for (JSONObject postCodeQuery : postCodesDetailsInArray){
             String postCode = (String) postCodeQuery.get("query");
-            postCodeMap.put(postCode, new SinglePostcodeDTO((JSONObject) postCodeQuery.get("result")));
+            postCodeMap.put(postCode, new SinglePostcodeDTO(postCodeQuery));
         }
     }
 

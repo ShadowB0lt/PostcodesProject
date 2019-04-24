@@ -45,7 +45,7 @@ public class MultiplePostcodeDTOTester
     @Test
     public void checkIncodeThree()
     {
-        Assert.assertEquals(multiDTOThree.getPostCodeHashMap().get("M32 0JG").getIncode(), "M32");
+        Assert.assertEquals(multiDTOThree.getPostCodeHashMap().get("M32 0JG").getIncode(), "0JG");
     }
 
 
