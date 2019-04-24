@@ -4,12 +4,12 @@ import java.io.FileReader;
 
 public class PostcodeFileReader {
 
-    private FileReader postCodeFile;
+    private FileReader postcodeFile;
 
     public PostcodeFileReader(String fileLocation)
     {
         try {
-            postCodeFile = new FileReader(fileLocation);
+            postcodeFile = new FileReader(fileLocation);
         }
         catch(Exception e)
         {
@@ -17,9 +17,9 @@ public class PostcodeFileReader {
         }
     }
 
-    public FileReader getPostCodeFile()
+    public FileReader getPostcodeFile()
     {
-        return postCodeFile;
+        return postcodeFile;
     }
 
 }
