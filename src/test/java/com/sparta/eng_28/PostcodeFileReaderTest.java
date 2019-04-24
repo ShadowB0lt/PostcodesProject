@@ -7,8 +7,6 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.io.File;
-import java.io.IOException;
 
 /**
  * Unit test for Postcode File Reader
@@ -32,7 +30,5 @@ public class PostcodeFileReaderTest
     public static void destroyFileReader(){
         reader = null;
     }
-
-
 
 }
