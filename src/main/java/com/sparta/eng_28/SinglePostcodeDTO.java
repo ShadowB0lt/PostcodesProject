@@ -25,18 +25,18 @@ public class SinglePostcodeDTO
         return (String) primaryMap.get("postcode");
     }
 
-    public int getQuality()
+    public long getQuality()
     {
-        return (int) primaryMap.get("quality");
+        return (long) primaryMap.get("quality");
     }
 
-    public int getEastings(){
-        return (int) primaryMap.get("eastings");
+    public long getEastings(){
+        return (long) primaryMap.get("eastings");
     }
 
-    public int getNorthings()
+    public long getNorthings()
     {
-        return (int) primaryMap.get("northings");
+        return (long) primaryMap.get("northings");
     }
 
     public String getCountry()
@@ -50,14 +50,14 @@ public class SinglePostcodeDTO
         return (String) primaryMap.get("nhs_ha");
     }
 
-    public float getLongitude()
+    public double getLongitude()
     {
-        return (float) primaryMap.get("longitude");
+        return (double) primaryMap.get("longitude");
     }
 
-    public float getLatitude()
+    public double getLatitude()
     {
-        return (float) primaryMap.get("latitude");
+        return (double) primaryMap.get("latitude");
     }
 
     public String getEuropeanElectoralRegion()
