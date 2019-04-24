@@ -21,12 +21,10 @@ public class PostcodeFileReader {
     }
 
 
-    {
-        return postCodeFile;
-    public FileReader getPostcodeFile()
-    {
+    public FileReader getPostcodeFile() {
         return postcodeFile;
     }
+
 
     public void closePostcodeFile(){
         try {
