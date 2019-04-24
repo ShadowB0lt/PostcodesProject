@@ -6,7 +6,7 @@ public class PostcodeJsonParserTest {
 
     @Test
     public void parseJsonCheck(){
-        PostcodeJsonParser ratesJsonParser = new PostcodeJsonParser("resources/multiplepostcodessize3.json");
-        System.out.println(ratesJsonParser.getPostcodeJson());
+        PostcodeJsonParser postcodeJsonParser = new PostcodeJsonParser("resources/multiplepostcodessize3.json");
+        System.out.println(postcodeJsonParser.getPostcodeJson());
     }
 }
